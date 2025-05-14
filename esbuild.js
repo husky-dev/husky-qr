@@ -4,7 +4,7 @@ const fs = require('fs');
 const crypto = require('crypto');
 const http = require('http');
 const postCssPlugin = require('./tools/postcss-plugin.js');
-const tailwindPlugin = require('tailwindcss');
+const tailwindPlugin = require('@tailwindcss/postcss');
 const tailwindConfig = require('./tailwind.config.js');
 const autoprefixer = require('autoprefixer');
 

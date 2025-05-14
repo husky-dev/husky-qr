@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 /**
  * Material UI breakpoints
  * xs, extra-small: 0px
@@ -31,17 +29,8 @@ module.exports = {
         'carbon-gray': '#5C5B5D',
         'soft-peach': '#EEEEEE', // rgb(238, 238, 238)
       },
-      fontFamily: {
-        // 'montserrat': ['Montserrat', ...defaultTheme.fontFamily.sans],
-        // 'montserrat-bold': ['Montserrat-Bold', ...defaultTheme.fontFamily.sans],
-        // 'montserrat-regular': ['Montserrat-Regular', ...defaultTheme.fontFamily.sans],
-        // 'montserrat-medium': ['Montserrat-Medium', ...defaultTheme.fontFamily.sans],
-      },
     },
   },
-  plugins: [
-    require('daisyui'),
-  ],
   daisyui: {
     logs: false,
   },

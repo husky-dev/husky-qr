@@ -1,6 +1,6 @@
 import './index.css';
 
-import React, { FC } from 'react';
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 import { MainPage } from './pages';
