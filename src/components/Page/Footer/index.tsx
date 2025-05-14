@@ -6,12 +6,13 @@ import React, { FC } from 'react';
 type Props = StyleProps & TestIdProps;
 
 export const PageFooter: FC<Props> = ({ testId, className, style }) => {
+  const year = new Date().getFullYear();
   return (
     <footer data-testid={testId} className={mc('space-y-0.5', 'text-center text-xs', className)} style={style}>
       <div>
-        <span>{'© 2024 '}</span>
-        <a className="link" href="https://life.husky-dev.me">
-          {'Ваше життя в тижнях'}
+        <span>{`© ${year} `}</span>
+        <a className="link" href="https://qr.husky-dev.me">
+          {'QR Toolkit'}
         </a>
       </div>
       <div>
