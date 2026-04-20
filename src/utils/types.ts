@@ -59,11 +59,9 @@ export const uniqBy = <D>(arr: D[], key: keyof D): D[] => {
 
 export const removeNullProps = <T>(obj: T): T => {
   if (isArr(obj)) {
-    // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
     return obj.map(itm => removeNullProps(itm)) as unknown as T;
   }
   if (isNum(obj) || isStr(obj) || isBool(obj) || isDate(obj)) {
-    // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
     return obj as unknown as T;
   }
   if (!isUnknownDict(obj)) {
@@ -72,7 +70,6 @@ export const removeNullProps = <T>(obj: T): T => {
   const newObj: T = { ...obj };
   for (const key in newObj) {
     if (isNull(newObj[key])) {
-      // eslint-disable-next-line @typescript-eslint/no-dynamic-delete
       delete newObj[key];
     }
     if (isUnknownDict(newObj[key])) {

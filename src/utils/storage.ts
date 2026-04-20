@@ -27,9 +27,8 @@ export const getStorage = <D>(opt: StorageOpt<D>) => {
       if (guard) {
         return guard(data) ? data : undefined;
       }
-      // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
       return data as unknown as D;
-    } catch (err: unknown) {
+    } catch {
       return undefined;
     }
   };

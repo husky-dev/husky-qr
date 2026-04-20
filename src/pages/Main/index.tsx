@@ -1,11 +1,8 @@
 import { PageFooter } from '@/components/Page';
-import { Log } from '@/core/log';
 import { mc, StyleProps } from '@/styles';
-import React, { ChangeEvent, FC, useRef, useState, MouseEvent } from 'react';
+import React, { FC, useRef, useState, MouseEvent } from 'react';
 import { QRCodeCanvas } from 'qrcode.react';
 import { OnResultFunction, QrReader } from 'react-qr-reader';
-
-const log = Log('MainPage');
 
 type Props = StyleProps;
 
@@ -22,7 +19,7 @@ export const MainPage: FC<Props> = ({ className }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [activeTab, setActiveTab] = useState<Tab>('create');
   const [value, setValue] = useState<string>('');
-  const [curErr, setCurErr] = useState<string | undefined>(undefined);
+  const [, setCurErr] = useState<string | undefined>(undefined);
 
   const handleTabClick = (tb: Tab) => (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
