@@ -5,16 +5,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-yarn start          # Dev server with HMR
-yarn dist           # Production build → dist/
-yarn test           # Jest test suite
-yarn lint           # Type check + ESLint
-yarn lint:types     # tsc --noEmit only
-yarn lint:eslint    # ESLint only
-yarn lint:format    # Prettier format
+npm start           # Dev server with HMR
+npm run dist        # Production build → dist/
+npm test            # Jest test suite
+npm run lint        # Type check + ESLint
+npm run lint:types  # tsc --noEmit only
+npm run lint:eslint # ESLint only
+npm run lint:format # Prettier format
 ```
 
-Run a single test file: `yarn test path/to/file.test.ts`
+Run a single test file: `npm test -- path/to/file.test.ts`
 
 ## Architecture
 

@@ -8,7 +8,7 @@
     "start": "node esbuild.js --serve",
     "dist": "node esbuild.js",
     "test": "jest",
-    "lint": "yarn lint:types && yarn lint:eslint",
+    "lint": "npm run lint:types && npm run lint:eslint",
     "lint:types": "tsc --noEmit --skipLibCheck",
     "lint:eslint": "eslint \"src/**\"",
     "lint:format": "prettier --write \"src/**/*.{ts,tsx}\"",
@@ -52,6 +52,5 @@
     "ts-node": "10.9.2",
     "typescript": "5.1.6",
     "zod": "3.24.1"
-  },
-  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  }
 }
