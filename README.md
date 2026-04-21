@@ -1,5 +1,7 @@
 # Husky QR Toolkit
 
+A simple web app for generating and reading QR codes. Paste any text or URL to create a downloadable QR code, or use your camera to scan and decode one.
+
 The app website: [https://qr.husky-dev.me](https://qr.husky-dev.me)
 
 ## Development
@@ -7,19 +9,31 @@ The app website: [https://qr.husky-dev.me](https://qr.husky-dev.me)
 Install dependencies:
 
 ```
-yarn install
+npm install
 ```
 
 Run dev server:
 
 ```
-yarn start
+npm run dev
 ```
 
 Build for production:
 
 ```
-yarn dist
+npm run dist
+```
+
+Run tests:
+
+```
+npm test
+```
+
+Lint:
+
+```
+npm run lint
 ```
 
 ## Contacts
