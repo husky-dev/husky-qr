@@ -77,7 +77,7 @@ export const MainPage: FC<Props> = ({ className }) => {
 
   const renderRead = () => (
     <div className="flex flex-col gap-4">
-      <QrReader constraints={{ facingMode: 'user' }} onResult={handleRead} />
+      <QrReader constraints={{ facingMode: 'environment' }} onResult={handleRead} />
       <textarea className="textarea textarea-primary w-full resize-none" rows={3} readOnly value={value} />
       <a className={mc('btn w-full', value ? 'btn-primary' : 'btn-disabled')} role="button" onClick={handleCopyClick}>
         {'Copy'}
